@@ -1,0 +1,57 @@
+//---Define Variables
+@dispmenu: inline-block;
+@color:#c1cdc1;
+@var1:home;
+@var2: journals;
+@var3: reflection;
+@aside: block;
+@images: "../img";
+@color2: #cdcdc1;
+
+
+#wrapper {
+  margin: 70px
+}
+
+body {
+  background: @color;
+  font-family: 'Open Sans', sans-serif;
+}
+.container div {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  display:@dispmenu;
+
+  ul{
+    list-style:none;
+  }
+}
+
+#main{
+  h1{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p{
+    font-size:12px;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+
+
+.content {
+  p{
+    float:left;
+  }
+}
+
+.side {
+  display: inline-flex;
+}
